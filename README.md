@@ -1,9 +1,9 @@
 # Refonte du site SGB – Sefaj Général Bâtiment
 
-Version 2 — refonte totale, direction « atelier / carnet de chantier » (conçue et codée avec ChatGPT, relue et corrigée par Claude).
+Version 3 — style aligné sur le site SGB Signature (Cormorant Garamond + Manrope, ivoire, filets fins). Visuels générés par ChatGPT.
 En ligne : https://pag-star.github.io/remastorisation_site_sgb/
 
-- `index.html` : site one-page statique (CSS/JS inline, Google Fonts : Bricolage Grotesque, Inter, JetBrains Mono)
+- `index.html` : site one-page statique (CSS/JS inline, Google Fonts : Cormorant Garamond, Manrope)
 - `images/` : visuels d'ambiance générés par ChatGPT (hero, extension, artisan, rénovation) — ce ne sont PAS des réalisations SGB
 - Réalisations avant/après : montages hébergés sur sgb-deco.fr (à rapatrier dans `images/`)
 
