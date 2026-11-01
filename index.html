@@ -14,7 +14,7 @@
   <meta property="og:site_name" content="SGB – Sefaj Général Bâtiment">
   <meta property="og:title" content="SGB — On transforme. On agrandit. On livre.">
   <meta property="og:description" content="Rénovation, maçonnerie et extensions de maison à Bourgoin-Jallieu et dans le Nord-Isère. Un interlocuteur, un chantier coordonné.">
-  <meta property="og:image" content="https://sgb-deco.fr/wp-content/uploads/2026/07/Nos-realisations_1-1.png">
+  <meta property="og:image" content="https://pag-star.github.io/remastorisation_site_sgb/images/hero.jpg">
   <meta property="og:image:alt" content="Réalisation de rénovation par SGB">
   <meta name="color-scheme" content="light">
 
@@ -990,7 +990,8 @@
       position:relative;
       overflow:hidden;
       background:#D7D4CE;
-      aspect-ratio:16/8;
+      aspect-ratio:500/325;
+      max-width:880px;
       --position:50%;
       touch-action:pan-y;
     }
@@ -1006,8 +1007,11 @@
       pointer-events:none;
     }
 
-    .comparison-after {
-      clip-path:inset(0 calc(100% - var(--position)) 0 0);
+    .comparison img.comparison-before,
+    .comparison img.comparison-after { height:200%; inset:auto; left:0; top:0; }
+    .comparison img.comparison-after {
+      top:-100%;
+      clip-path:inset(50% calc(100% - var(--position)) 0 0);
     }
 
     .comparison-label {
@@ -1152,12 +1156,12 @@
     }
 
     .gallery-item {
-      flex:0 0 clamp(270px,37vw,630px);
+      flex:0 0 clamp(240px,24vw,380px);
       min-width:0;
       scroll-snap-align:start;
     }
 
-    .gallery-item .image-frame { aspect-ratio:4/3; }
+    .gallery-item .image-frame { aspect-ratio:500/650; }
 
     .gallery-item figcaption {
       display:flex;
@@ -1950,7 +1954,7 @@
 
       .signature-quote { font-size:31px; }
 
-      .comparison { aspect-ratio:4/3; }
+      .comparison { aspect-ratio:500/325; }
 
       .comparison-label {
         top:12px;
@@ -1970,7 +1974,7 @@
       .comparison-note { flex-direction:column; gap:8px; }
 
       .gallery-top { margin-top:85px; }
-      .gallery-item { flex-basis:82vw; }
+      .gallery-item { flex-basis:68vw; }
 
       .timeline { grid-template-columns:1fr; }
 
@@ -2531,23 +2535,18 @@
           class="comparison reveal"
           id="comparison"
           role="group"
-          aria-label="Comparaison visuelle de deux photographies de réalisations SGB">
+          aria-label="Comparaison avant / après travaux">
           <img
-            src="https://sgb-deco.fr/wp-content/uploads/2026/07/Nos-realisations_1-1.png"
-            alt="Première photographie de réalisation SGB"
-            width="1200"
-            height="800"
-            loading="lazy"
-            decoding="async">
+            class="comparison-before"
+            src="https://sgb-deco.fr/wp-content/uploads/2026/07/Nos-realisations_3-1.png"
+            alt="Avant travaux : pièce brute, murs non enduits, sol en chape"
+            width="500" height="650" loading="lazy" decoding="async">
 
           <img
             class="comparison-after"
-            src="https://sgb-deco.fr/wp-content/uploads/2026/07/Nos-realisations_2-1.png"
-            alt="Deuxième photographie de réalisation SGB"
-            width="1200"
-            height="800"
-            loading="lazy"
-            decoding="async">
+            src="https://sgb-deco.fr/wp-content/uploads/2026/07/Nos-realisations_3-1.png"
+            alt="Après travaux : cuisine aménagée, sol parquet, murs finis"
+            width="500" height="650" loading="lazy" decoding="async">
 
           <span class="comparison-label after">APRÈS / 02</span>
           <span class="comparison-label before">AVANT / 01</span>
@@ -2562,15 +2561,13 @@
             max="100"
             value="50"
             step="1"
-            aria-label="Afficher la proportion de la deuxième photographie"
-            aria-valuetext="50 pour cent de la deuxième photographie">
+            aria-label="Curseur avant / après"
+            aria-valuetext="50 pour cent">
         </div>
 
         <div class="comparison-note">
           <p>
-            Comparaison des photographies 01 et 02 du portfolio SGB.
-            L'identification de ces vues comme les deux étapes d'un même chantier
-            doit être confirmée avant toute présentation commerciale comme un véritable avant/après.
+            Faites glisser le curseur pour comparer l'état avant travaux et le résultat livré.
           </p>
           <span class="mono">CURSEUR / 0—100 %</span>
         </div>
@@ -2588,42 +2585,42 @@
 
         <figure class="gallery-item">
           <div class="image-frame">
-            <img src="https://sgb-deco.fr/wp-content/uploads/2026/07/Nos-realisations_1-1.png" alt="Réalisation SGB, photographie numéro 1" width="960" height="720" loading="lazy" decoding="async">
+            <img src="https://sgb-deco.fr/wp-content/uploads/2026/07/Nos-realisations_1-1.png" alt="Avant / après travaux, vue 01 : état initial en haut, résultat en bas" width="500" height="650" loading="lazy" decoding="async">
           </div>
           <figcaption class="mono"><span>ARCHIVE / RÉALISATION 01</span><span>01—06</span></figcaption>
         </figure>
 
         <figure class="gallery-item">
           <div class="image-frame">
-            <img src="https://sgb-deco.fr/wp-content/uploads/2026/07/Nos-realisations_2-1.png" alt="Réalisation SGB, photographie numéro 2" width="960" height="720" loading="lazy" decoding="async">
+            <img src="https://sgb-deco.fr/wp-content/uploads/2026/07/Nos-realisations_2-1.png" alt="Avant / après travaux, vue 02 : état initial en haut, résultat en bas" width="500" height="650" loading="lazy" decoding="async">
           </div>
           <figcaption class="mono"><span>ARCHIVE / RÉALISATION 02</span><span>02—06</span></figcaption>
         </figure>
 
         <figure class="gallery-item">
           <div class="image-frame">
-            <img src="https://sgb-deco.fr/wp-content/uploads/2026/07/Nos-realisations_3-1.png" alt="Réalisation SGB, photographie numéro 3" width="960" height="720" loading="lazy" decoding="async">
+            <img src="https://sgb-deco.fr/wp-content/uploads/2026/07/Nos-realisations_3-1.png" alt="Avant / après travaux, vue 03 : état initial en haut, résultat en bas" width="500" height="650" loading="lazy" decoding="async">
           </div>
           <figcaption class="mono"><span>ARCHIVE / RÉALISATION 03</span><span>03—06</span></figcaption>
         </figure>
 
         <figure class="gallery-item">
           <div class="image-frame">
-            <img src="https://sgb-deco.fr/wp-content/uploads/2026/07/Nos-realisations_4-1.png" alt="Réalisation SGB, photographie numéro 4" width="960" height="720" loading="lazy" decoding="async">
+            <img src="https://sgb-deco.fr/wp-content/uploads/2026/07/Nos-realisations_4-1.png" alt="Avant / après travaux, vue 04 : état initial en haut, résultat en bas" width="500" height="650" loading="lazy" decoding="async">
           </div>
           <figcaption class="mono"><span>ARCHIVE / RÉALISATION 04</span><span>04—06</span></figcaption>
         </figure>
 
         <figure class="gallery-item">
           <div class="image-frame">
-            <img src="https://sgb-deco.fr/wp-content/uploads/2026/07/Nos-realisations_5-1.png" alt="Réalisation SGB, photographie numéro 5" width="960" height="720" loading="lazy" decoding="async">
+            <img src="https://sgb-deco.fr/wp-content/uploads/2026/07/Nos-realisations_5-1.png" alt="Avant / après travaux, vue 05 : état initial en haut, résultat en bas" width="500" height="650" loading="lazy" decoding="async">
           </div>
           <figcaption class="mono"><span>ARCHIVE / RÉALISATION 05</span><span>05—06</span></figcaption>
         </figure>
 
         <figure class="gallery-item">
           <div class="image-frame">
-            <img src="https://sgb-deco.fr/wp-content/uploads/2026/07/Nos-realisations_6.png" alt="Réalisation SGB, photographie numéro 6" width="960" height="720" loading="lazy" decoding="async">
+            <img src="https://sgb-deco.fr/wp-content/uploads/2026/07/Nos-realisations_6.png" alt="Avant / après travaux, vue 06 : état initial en haut, résultat en bas" width="500" height="650" loading="lazy" decoding="async">
           </div>
           <figcaption class="mono"><span>ARCHIVE / RÉALISATION 06</span><span>06—06</span></figcaption>
         </figure>
